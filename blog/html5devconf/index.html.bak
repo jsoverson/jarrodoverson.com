@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="profile" href="http://gmpg.org/xfn/11"><link rel="pingback" href="/blog/xmlrpc.php"><!--[if lt IE 9]>
+	<script src="/blog/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]--><script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script><title>HTML5 Dev Conf Overview &ndash; JarrodOverson.com</title><link rel="alternate" type="application/rss+xml" title="JarrodOverson.com &raquo; Feed" href="/blog/feed/"><link rel="alternate" type="application/rss+xml" title="JarrodOverson.com &raquo; Comments Feed" href="/blog/comments/feed/"><link rel="alternate" type="application/rss+xml" title="JarrodOverson.com &raquo; HTML5 Dev Conf Overview Comments Feed" href="/blog/html5devconf/feed/"><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/jarrodoverson.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style><link rel="stylesheet" id="twentyfifteen-fonts-css" href="https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all"><link rel="stylesheet" id="genericons-css" href="/blog/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2" type="text/css" media="all"><link rel="stylesheet" id="twentyfifteen-style-css" href="/blog/wp-content/themes/twentyfifteen/style.css?ver=4.4.2" type="text/css" media="all"><!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='/blog/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]--><!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='/blog/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]--><script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery.js?ver=1.11.3"></script><script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script><link rel="https://api.w.org/" href="/blog/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/blog/xmlrpc.php?rsd"><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/blog/wp-includes/wlwmanifest.xml"><link rel="prev" title="A month of gruntjs" href="/blog/a-month-of-gruntjs/"><link rel="next" title="Project updates" href="/blog/project-updates/"><meta name="generator" content="WordPress 4.4.2"><link rel="canonical" href="/blog/html5devconf/"><link rel="shortlink" href="/blog/?p=421"><link rel="alternate" type="application/json+oembed" href="/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fhtml5devconf%2F"><link rel="alternate" type="text/xml+oembed" href="/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fhtml5devconf%2F&amp;format=xml"><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #adadad; }
+</style></head><body class="single single-post postid-421 single-format-standard custom-background">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="/blog/html5devconf/#content">Skip to content</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner"><div class="site-branding">
+										<p class="site-title"><a href="/blog/" rel="home">JarrodOverson.com</a></p>
+									<button class="secondary-toggle">Menu and widgets</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header --><div id="secondary" class="secondary">
+
+		
+		
+					<div id="widget-area" class="widget-area" role="complementary">
+				<aside id="text-2" class="widget widget_text"><h2 class="widget-title">I &hearts; the web</h2>			<div class="textwidget"><p><img src="http://www.gravatar.com/avatar/74be2e435d69a5827de7b5d33e7b343d" style="border-radius:5px; width:50px;float:left; margin-right:5px"></p>
+<p>I'm Jarrod, a web addict of moderately unhealthy proportions. I advocate for all things web, am a regular contributor to <a href="http://github.com/jsoverson">Open Source</a>, and am an engineer at <a href="http://shapesecurity.com/">Shape Security</a>.</p>
+</div>
+		</aside><aside id="linkcat-22" class="widget widget_links"><h2 class="widget-title">Books</h2>
+	<ul class="xoxo blogroll"><li><a href="http://shop.oreilly.com/product/0636920032922.do">O'Reilly's Developing Web Components</a></li>
+
+	</ul></aside><aside id="linkcat-23" class="widget widget_links"><h2 class="widget-title">Projects</h2>
+	<ul class="xoxo blogroll"><li><a href="https://github.com/jsoverson/plato" title="JavaScript complexity analysis and visualization tool">Plato &ndash; JavaScript complexity analysis</a></li>
+<li><a href="/static/demos/particleSystem/" title="Interactive Particle System written in JavaScript using HTML5 canvas">JavaScript Particle System</a></li>
+<li><a href="http://jsoverson.github.com/jquery.pulse.js/">jQuery Pulse Plugin</a></li>
+<li><a href="http://gitfaq.org/" title="Git FAQ">GitFAQ.org</a></li>
+
+	</ul></aside></div><!-- .widget-area -->
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main"><article id="post-421" class="post-421 post type-post status-publish format-standard hentry category-uncategorized"><header class="entry-header"><h1 class="entry-title">HTML5 Dev Conf Overview</h1>	</header><!-- .entry-header --><div class="entry-content">
+		<p>I&rsquo;m sitting in an airport after two days at <a href="http://html5devconf.com">HTML5 Dev Conf</a>&nbsp;with plenty of time to think about the conf sprinkled with the occasional double check of my boarding pass to make sure I&rsquo;m at the right gate.</p>
+<p>Overall, the conf was worth going to, but the quality of the talks flip flopped between frustratingly amateur to mind blowingly awesome.</p>
+<p><a href="http://twitter.com/paul_irish">Paul Irish</a> talked (<a href="https://dl.dropbox.com/u/39519/talks/html5dc-workflow/index.html">slides</a>) about how to enhance your toolchain and churned out loads of tools or aspects of tools I didn&rsquo;t know about. SASS support around the corner in Chrome&rsquo;s DevTools? Persistent JS snippets? Even Command-O was new to me and that&rsquo;s already available. I had walked into the keynote expecting to hear mostly about <a href="http://yeoman.io/">Yeoman</a>, which I&rsquo;ve already played a bit with, but when he started talking I quickly had an &ldquo;Oh shit&rdquo; moment and realized I needed to break out the laptop and take notes.</p>
+<p><a href="http://twitter.com/codepo8">Chris Heilmann</a> talked about the <a href="http://www.youtube.com/watch?v=r7xnKSPWTjo">broken promises of HTML5</a> and how unproductive it is to be wowed at and emulate things that Flash developers have been doing for the past 8 years. It&rsquo;s awesome, yes, but we&rsquo;re still under water when it comes to functionality that others have already come to expect and that we need to be making great applications. What is going to get us further, faster is to start exploiting the web for what it is best at and make bigger swings with widely accessible and richly functional sites/applications. Firefox OS promises to bridge a gap when it comes to device functionality exposed to web tech, but they&rsquo;re targeting markets that I&rsquo;m not in. It makes sense and is probably a good future investment but I&rsquo;d love to see some focus in the US.</p>
+<p><a href="https://twitter.com/souders">Steve Souders</a>&nbsp;gave a <a href="http://www.slideshare.net/souders/cache-is-king">great talk</a> on caching and harped on some of the basics that are really important to get right like setting max-age and other cache headers. He mentioned why relying on heuristic caching, or what browsers or other clients do when no cache behavior is explicitly set, is unreliable for such an important aspect of your site and business. A few of <a href="http://www.stevesouders.com/blog/2012/10/11/cache-is-king/">Souders&rsquo; other stats</a>&nbsp;highlighted just how important cache is, being more important than a fatter pipe or even disabling JavaScript in your browser (or, extrapolating from that, stripping all JavaScript from your site).</p>
+<p><a href="https://twitter.com/jamespearce">James Pearce</a> of Facebook, a smart guy without a doubt, gave his frustratingly negative perspective on mobile web applications to the wrong crowd. The focus was the experience Facebook had developing and supporting their mobile application, generally considered a very poor quality app until they moved native. I can absolutely respect frustrations with mobile development with web technology; there are <strong>so</strong> many unknowns, problems that don&rsquo;t yet have standard solutions, and a lack of decent development tools to aid the process. I, personally, might not even recommend going web tech at all on mobile depending on the developers you have access to, but to use the Facebook app as an example of the failure of the entire platform is irresponsible and genuine misinformation. One of the glaring failures of Pearce&rsquo;s talk is his quote that the installed application&rsquo;s lists look &ldquo;pixel for pixel&rdquo; the same as m.facebook.com because the same html is served.&nbsp;<em>That is not a web application. </em>That is a wrapper around a website.&nbsp;<em></em>Facebook&rsquo;s developers made some poor decisions and it is being used, publicly, as a shining example of how immature the web&nbsp;platform is. It was counter-productive and inappropriate for the audience and conference he was at.</p>
+<p>Fortunately, <a href="https://twitter.com/stevenewcomb">Steve Newcomb</a>&nbsp;gave a talk later in the day that appeared to expose a tip of the iceberg on untapped potential of the web platform. The <a href="http://famo.us/">Famo.us</a> project makes some very large promises about performance on mobile devices and the demos were what everyone was talking about for the rest of the day. There were live demos on iPads after the talk that seemed to support the claims but, as with anything not actually released, it&rsquo;s hard to know exactly what is being done and whether or not this is a general solution that will help many or a specific implementation that won&rsquo;t be widely applicable. Check out the demos at the <a href="http://famo.us/">Famo.us</a> site.</p>
+<p>I&rsquo;d love to get a closer look at the internals, so if you happen to sign up for early release, please use <a href="http://famo.us/r/VMCB">http://famo.us/r/VMCB</a>&nbsp;to group your and my requests in the same bucket, hopefully weighting all of our requests more heavily.</p>
+<p>There were other great talks (like <a href="/blog/html5devconf/twitter.com/shayhowe">Shay Howe</a>&lsquo;s talk &ldquo;<a href="https://speakerdeck.com/u/shayhowe/p/tactical-html-and-css">Tactical CSS</a>&ldquo;) but my plane is landing. Maybe next time.</p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer"><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/blog/html5devconf/" rel="bookmark"><time class="entry-date published" datetime="2012-10-17T20:27:22+00:00">October 17, 2012</time><time class="updated" datetime="2012-10-17T23:14:29+00:00">October 17, 2012</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Author </span><a class="url fn n" href="/blog/author/admin/">Jarrod</a></span></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/blog/category/uncategorized/" rel="category tag">Uncategorized</a></span>			</footer><!-- .entry-footer --></article><!-- #post-## --><div id="comments" class="comments-area">
+
+	
+	
+					<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/html5devconf/#respond" style="display:none;">Cancel reply</a></small></h3><p class="must-log-in">You must be <a href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fhtml5devconf%2F">logged in</a> to post a comment.</p>		</div><!-- #respond -->
+		
+</div><!-- .comments-area -->
+
+	<nav class="navigation post-navigation" role="navigation"><h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="/blog/a-month-of-gruntjs/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">A month of gruntjs</span></a></div><div class="nav-next"><a href="/blog/project-updates/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">Project updates</span></a></div></div>
+	</nav></main><!-- .site-main --></div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo"><div class="site-info">
+						<a href="https://wordpress.org/">Proudly exported from and no longer reliant on WordPress</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer --></div><!-- .site -->
+
+<script type="text/javascript" src="/blog/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010"></script><script type="text/javascript" src="/blog/wp-includes/js/comment-reply.min.js?ver=4.4.2"></script><script type="text/javascript">
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script><script type="text/javascript" src="/blog/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330"></script><script type="text/javascript" src="/blog/wp-includes/js/wp-embed.min.js?ver=4.4.2"></script></body></html>

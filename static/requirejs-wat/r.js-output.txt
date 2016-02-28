@@ -1,0 +1,22 @@
+
+$ grep license app/require.js | head -1
+ * @license RequireJS 2.0.4 Copyright (c) 2010-2012, The Dojo Foundation All Rights Reserved.
+
+$ r.js -v
+r.js: 2.0.4, RequireJS: 2.0.4
+
+$ r.js -o app.build.js 
+
+Tracing dependencies for: main
+TypeError: Cannot read property 'foo' of undefined
+In module tree:
+    main
+      plugin
+
+TypeError: Cannot read property 'foo' of undefined
+In module tree:
+    main
+      plugin
+
+    at eval at <anonymous> (/usr/local/lib/node_modules/requirejs/bin/r.js:13805:38)
+

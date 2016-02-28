@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>JarrodOverson.com</title>
+	<atom:link href="/blog/feed/" rel="self" type="application/rss+xml" />
+	<link>/blog</link>
+	<description></description>
+	<lastBuildDate>Tue, 06 Oct 2015 19:45:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.2</generator>
+	<item>
+		<title>Syntax Highlighting in Keynote (plus devtools theme)</title>
+		<link>/blog/syntax-highlighting-in-keynote-plus-devtools-theme/</link>
+		<comments>/blog/syntax-highlighting-in-keynote-plus-devtools-theme/#comments</comments>
+		<pubDate>Tue, 06 Oct 2015 19:45:13 +0000</pubDate>
+		<dc:creator><![CDATA[Jarrod]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/blog/?p=651</guid>
+		<description><![CDATA[Now matter how many times I try displaying code in presentations; pictures, plain text, live code, IDEs, etc; I always want to go back to simple syntax highlighting of static code. Syntax highlighting source code in Keynote is a gigantic pain. You need to do it yourself or copy colored source from some other location like &#8230; <a href="/blog/syntax-highlighting-in-keynote-plus-devtools-theme/" class="more-link">Continue reading <span class="screen-reader-text">Syntax Highlighting in Keynote (plus devtools theme)</span></a>]]></description>
+		<wfw:commentRss>/blog/syntax-highlighting-in-keynote-plus-devtools-theme/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>So What&#8217;s the Deal with Shape Security?</title>
+		<link>/blog/whats-the-deal-with-shape-security/</link>
+		<comments>/blog/whats-the-deal-with-shape-security/#comments</comments>
+		<pubDate>Mon, 19 Jan 2015 19:44:11 +0000</pubDate>
+		<dc:creator><![CDATA[Jarrod]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/blog/?p=618</guid>
+		<description><![CDATA[If you have interacted with me at all over the past 8 months I&#8217;ve probably mentioned something about the company I work at, Shape Security. If you knew me before you&#8217;ve probably wondered why I ever took a job at a hardware based security company. After running free community JavaScript training courses, speaking at web conferences, &#8230; <a href="/blog/whats-the-deal-with-shape-security/" class="more-link">Continue reading <span class="screen-reader-text">So What&#8217;s the Deal with Shape Security?</span></a>]]></description>
+		<wfw:commentRss>/blog/whats-the-deal-with-shape-security/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>The Single Worst Thing about JavaScript</title>
+		<link>/blog/the-single-worst-thing-about-javascript/</link>
+		<comments>/blog/the-single-worst-thing-about-javascript/#comments</comments>
+		<pubDate>Tue, 07 Oct 2014 17:51:24 +0000</pubDate>
+		<dc:creator><![CDATA[Jarrod]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/blog/?p=608</guid>
+		<description><![CDATA[There are many weird things about JavaScript, the DOM, and related web tech. Many quirks, oddities, frustrations, and wtfs. But there is one &#8220;worst thing&#8221; and the worst thing in JavaScript is String.prototype.split() (es5 15.5.4.14) String.prototype.split() is defined to take a separator and a limit as its arguments, operating on the &#8220;this&#8221; object internally for the string object &#8230; <a href="/blog/the-single-worst-thing-about-javascript/" class="more-link">Continue reading <span class="screen-reader-text">The Single Worst Thing about JavaScript</span></a>]]></description>
+		<wfw:commentRss>/blog/the-single-worst-thing-about-javascript/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Gitfaq.org</title>
+		<link>/blog/gitfaq-org/</link>
+		<comments>/blog/gitfaq-org/#respond</comments>
+		<pubDate>Tue, 23 Sep 2014 05:54:52 +0000</pubDate>
+		<dc:creator><![CDATA[Jarrod]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/blog/?p=605</guid>
+		<description><![CDATA[Over the years i&#8217;ve amassed a decent amount of git knowledge but still find myself googling obscure details rather than hitting the man pages. The search results inevitably lead to stackoverflow where I need to figure out which answer is relevant to the my problem (pro tip: it&#8217;s rarely the accepted answer) or some blog where the solution is described &#8230; <a href="/blog/gitfaq-org/" class="more-link">Continue reading <span class="screen-reader-text">Gitfaq.org</span></a>]]></description>
+		<wfw:commentRss>/blog/gitfaq-org/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Animated GIFs in Keynote</title>
+		<link>/blog/animated-gifs-in-keynote/</link>
+		<comments>/blog/animated-gifs-in-keynote/#comments</comments>
+		<pubDate>Fri, 28 Feb 2014 17:54:09 +0000</pubDate>
+		<dc:creator><![CDATA[Jarrod]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/blog/?p=597</guid>
+		<description><![CDATA[The Keynote update has blown my mind with its lack of functionality ever since day one, but I&#8217;ve finally found out how to get animated gifs working in it now. Rename your gif&#8217;s extension to .mov and drag it into keynote. Keynote will warn you about not being able to play that movie on iPad &#8230; <a href="/blog/animated-gifs-in-keynote/" class="more-link">Continue reading <span class="screen-reader-text">Animated GIFs in Keynote</span></a>]]></description>
+		<wfw:commentRss>/blog/animated-gifs-in-keynote/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>OSX ping &#038; Cannot allocate memory</title>
+		<link>/blog/osx-ping-cannot-allocate-memory/</link>
+		<comments>/blog/osx-ping-cannot-allocate-memory/#comments</comments>
+		<pubDate>Thu, 30 Jan 2014 18:21:21 +0000</pubDate>
+		<dc:creator><![CDATA[Jarrod]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/blog/?p=594</guid>
+		<description><![CDATA[[09:58:20] 2 $ ping 4.2.2.2 PING 4.2.2.2 (4.2.2.2): 56 data bytes ping: sendto: Cannot allocate memory ping: sendto: Cannot allocate memory Request timeout for icmp_seq 0 ping: sendto: Cannot allocate memory Request timeout for icmp_seq 1 I&#8217;ve been having a pain in the ass time troubleshooting a laptop&#8217;s sporadic issue with connecting when waking up &#8230; <a href="/blog/osx-ping-cannot-allocate-memory/" class="more-link">Continue reading <span class="screen-reader-text">OSX ping &#038; Cannot allocate memory</span></a>]]></description>
+		<wfw:commentRss>/blog/osx-ping-cannot-allocate-memory/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Using github pages on github enterprise</title>
+		<link>/blog/using-github-pages-on-github-enterprise/</link>
+		<comments>/blog/using-github-pages-on-github-enterprise/#comments</comments>
+		<pubDate>Fri, 08 Nov 2013 16:06:06 +0000</pubDate>
+		<dc:creator><![CDATA[Jarrod]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/blog/?p=591</guid>
+		<description><![CDATA[Most github enterprise solutions I&#8217;ve seen didn&#8217;t configure subdomains per-user like github public does, and I didn&#8217;t find any obvious documentation as to how to use gh-pages outside of that style. For anyone in the same boat I was in, the url structure for github pages without using subdomains is : http://[your github domain]/pages/[username]/[repo]/]]></description>
+		<wfw:commentRss>/blog/using-github-pages-on-github-enterprise/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Fix for League of Legends not opening on Mac</title>
+		<link>/blog/fix-for-league-of-legends-not-opening-on-mac/</link>
+		<comments>/blog/fix-for-league-of-legends-not-opening-on-mac/#comments</comments>
+		<pubDate>Wed, 30 Oct 2013 03:56:05 +0000</pubDate>
+		<dc:creator><![CDATA[Jarrod]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/blog/?p=585</guid>
+		<description><![CDATA[There are different fixes for different problems. My problem occurred while trying to open league while connected to wireless but behind a hotspot login gate. I got a UserKernel popup and then the launcher never started again. I still had the .dmg from install, and the fix (after mounting the .dmg) was to copy the &#8230; <a href="/blog/fix-for-league-of-legends-not-opening-on-mac/" class="more-link">Continue reading <span class="screen-reader-text">Fix for League of Legends not opening on Mac</span></a>]]></description>
+		<wfw:commentRss>/blog/fix-for-league-of-legends-not-opening-on-mac/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>The One Biggest Problem with Google Glass</title>
+		<link>/blog/the-one-biggest-problem-with-google-glass/</link>
+		<comments>/blog/the-one-biggest-problem-with-google-glass/#comments</comments>
+		<pubDate>Mon, 07 Oct 2013 20:36:17 +0000</pubDate>
+		<dc:creator><![CDATA[Jarrod]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/blog/?p=576</guid>
+		<description><![CDATA[After months of using Glass for a variety of purposes in a variety of environments I&#8217;ve found that I always end up at one situation that has no good solution. What do you do with Glass when you don&#8217;t want to wear it anymore? Where do you put it? Glass doesn&#8217;t fold and is delicate, &#8230; <a href="/blog/the-one-biggest-problem-with-google-glass/" class="more-link">Continue reading <span class="screen-reader-text">The One Biggest Problem with Google Glass</span></a>]]></description>
+		<wfw:commentRss>/blog/the-one-biggest-problem-with-google-glass/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Consider Reinventing the Wheel</title>
+		<link>/blog/consider-reinventing-the-wheel/</link>
+		<comments>/blog/consider-reinventing-the-wheel/#respond</comments>
+		<pubDate>Fri, 09 Aug 2013 17:27:11 +0000</pubDate>
+		<dc:creator><![CDATA[Jarrod]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/blog/?p=568</guid>
+		<description><![CDATA[&#8220;Reinventing the wheel&#8221; has earned such bad connotations in the software development community that it&#8217;s hard to pinpoint when it turned from &#8220;if what exists is good enough, use it&#8221; to &#8220;if somethings exists, don&#8217;t think you can do better.&#8221; The emotion behind both those statements is wildly different and many people use the saying &#8230; <a href="/blog/consider-reinventing-the-wheel/" class="more-link">Continue reading <span class="screen-reader-text">Consider Reinventing the Wheel</span></a>]]></description>
+		<wfw:commentRss>/blog/consider-reinventing-the-wheel/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

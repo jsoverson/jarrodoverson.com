@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="profile" href="http://gmpg.org/xfn/11"><link rel="pingback" href="/blog/xmlrpc.php"><!--[if lt IE 9]>
+	<script src="/blog/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]--><script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script><title>Why I use spaces over tabs &ndash; JarrodOverson.com</title><link rel="alternate" type="application/rss+xml" title="JarrodOverson.com &raquo; Feed" href="/blog/feed/"><link rel="alternate" type="application/rss+xml" title="JarrodOverson.com &raquo; Comments Feed" href="/blog/comments/feed/"><link rel="alternate" type="application/rss+xml" title="JarrodOverson.com &raquo; Why I use spaces over tabs Comments Feed" href="/blog/spaces-vs-tabs/feed/"><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/jarrodoverson.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style><link rel="stylesheet" id="twentyfifteen-fonts-css" href="https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all"><link rel="stylesheet" id="genericons-css" href="/blog/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2" type="text/css" media="all"><link rel="stylesheet" id="twentyfifteen-style-css" href="/blog/wp-content/themes/twentyfifteen/style.css?ver=4.4.2" type="text/css" media="all"><!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='/blog/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]--><!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='/blog/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]--><script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery.js?ver=1.11.3"></script><script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script><link rel="https://api.w.org/" href="/blog/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/blog/xmlrpc.php?rsd"><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/blog/wp-includes/wlwmanifest.xml"><link rel="prev" title="grunt-require-dir published to npm" href="/blog/grunt-require-dir-published-to-npm/"><link rel="next" title="A month of gruntjs" href="/blog/a-month-of-gruntjs/"><meta name="generator" content="WordPress 4.4.2"><link rel="canonical" href="/blog/spaces-vs-tabs/"><link rel="shortlink" href="/blog/?p=316"><link rel="alternate" type="application/json+oembed" href="/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F"><link rel="alternate" type="text/xml+oembed" href="/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F&amp;format=xml"><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #adadad; }
+</style></head><body class="single single-post postid-316 single-format-standard custom-background">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="/blog/spaces-vs-tabs/#content">Skip to content</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner"><div class="site-branding">
+										<p class="site-title"><a href="/blog/" rel="home">JarrodOverson.com</a></p>
+									<button class="secondary-toggle">Menu and widgets</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header --><div id="secondary" class="secondary">
+
+		
+		
+					<div id="widget-area" class="widget-area" role="complementary">
+				<aside id="text-2" class="widget widget_text"><h2 class="widget-title">I &hearts; the web</h2>			<div class="textwidget"><p><img src="http://www.gravatar.com/avatar/74be2e435d69a5827de7b5d33e7b343d" style="border-radius:5px; width:50px;float:left; margin-right:5px"></p>
+<p>I'm Jarrod, a web addict of moderately unhealthy proportions. I advocate for all things web, am a regular contributor to <a href="http://github.com/jsoverson">Open Source</a>, and am an engineer at <a href="http://shapesecurity.com/">Shape Security</a>.</p>
+</div>
+		</aside><aside id="linkcat-22" class="widget widget_links"><h2 class="widget-title">Books</h2>
+	<ul class="xoxo blogroll"><li><a href="http://shop.oreilly.com/product/0636920032922.do">O'Reilly's Developing Web Components</a></li>
+
+	</ul></aside><aside id="linkcat-23" class="widget widget_links"><h2 class="widget-title">Projects</h2>
+	<ul class="xoxo blogroll"><li><a href="https://github.com/jsoverson/plato" title="JavaScript complexity analysis and visualization tool">Plato &ndash; JavaScript complexity analysis</a></li>
+<li><a href="/static/demos/particleSystem/" title="Interactive Particle System written in JavaScript using HTML5 canvas">JavaScript Particle System</a></li>
+<li><a href="http://jsoverson.github.com/jquery.pulse.js/">jQuery Pulse Plugin</a></li>
+<li><a href="http://gitfaq.org/" title="Git FAQ">GitFAQ.org</a></li>
+
+	</ul></aside></div><!-- .widget-area -->
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+<style>
+	#static-notice {
+		font-family:sans-serif;
+		text-align:center;
+		background-color:#F44336;
+		color:#FFFFFF;
+	}
+	#static-notice p {
+		padding:10px 0;
+	}
+	#static-notice a {
+		color:#FFFFFF;
+		text-decoration:underline;
+	}
+</style>
+<div id="static-notice">
+	<h2>Notice!</h2>
+<p>
+This is a static archive. Some links may not work.
+<br>
+	Please visit <a href="http://jarrodoverson.com">jarrodoverson.com</a>
+for updated content.
+</p>
+</div>
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main"><article id="post-316" class="post-316 post type-post status-publish format-standard hentry category-uncategorized"><header class="entry-header"><h1 class="entry-title">Why I use spaces over tabs</h1>	</header><!-- .entry-header --><div class="entry-content">
+		<p>[<em><strong>UPDATE:</strong> I just got an email from someone saying they use tabs over spaces because visually aligning everything by repeatedly pressing the spacebar is too cumbersome. <strong><em>That is not what is meant by using spaces over tabs!</em></strong> Every IDE/editor supports replacing tab presses with a dynamic and variable number of spaces until you get to the appropriate indentation level. It would be insane if this misunderstanding turned out to be one of the cruxes of the issue.</em>]</p>
+<hr><p>I never really understood the Tabs vs Spaces debate. When I first started programming I started using tabs but almost immediately realized they just weren&rsquo;t suited for the job. They promise flexibility but, in practice, that flexibility is largely a lie and you tie other developers to your indentation style regardless. If you are tying developers in to a style, then why use tabs which can add unexpected confusion?</p>
+<p>In the examples below, tab characters are colored a darker grey. Don&rsquo;t get hung up on the coding style, the issues of alignment are what&rsquo;s important and the code is terse for example&rsquo;s sake.</p>
+<h3>Tabs with 4 char widths</h3>
+<p>This example shows an initial setup that uses a 4-width tab for nearly everything. It looks great and beautiful when you are set up for a 4-width tab, but try changing the tab width with the buttons below the example.</p>
+<div id="fourSpaceTab" class="tabExample">
+<pre></pre>
+<p>  <button>1</button><button>2</button><button>3</button><button>4</button>
+</p></div>
+<p>All the careful alignment goes to crap when you change the tab width. Yes, the fact that you can change the tab width is a great option to have, but if it requires you to reformat your code then it is not actually a real feature of using tabs, it&rsquo;s the same situation in any scenario. Either manual or automatic reformatting all around.</p>
+<h3>Tabs with 2 char widths</h3>
+<p>Below is the same example as above, but optimized for a 2 character width tab. The exact same problem applies, but you can also see that it takes a different number of tabs to produce similar alignments.</p>
+<div id="twoSpaceTab" class="tabExample">
+<pre></pre>
+<p>  <button>1</button><button>2</button><button>3</button><button>4</button>
+</p></div>
+<h3>Tabs for block indent only</h3>
+<p>The last entry on our tabstop tour is an example that only uses tabs for block level indentation, which some people use as a solution to the above problems. This still has its own issues when alignments occur across block level indentations (look at the last block) but also raises the simple question &ldquo;why?&rdquo; Block level indentation is the simplest thing for an IDE to take control over, and the actual act of block indentation is almost always hidden from the developer. It is also the easiest to reformat globally since the rules for that are relatively standard, configurable in most decent IDEs or, at the least, tolerable.</p>
+<p>Even if this is the most tolerable solution, it introduces yet another wrench into enforcing style with other developers. Now you need to make sure a developer only uses tabs for block level indentation, and spaces for alignment purposes.</p>
+<div id="blockIndentOnly" class="tabExample">
+<pre></pre>
+<p>  <button>1</button><button>2</button><button>3</button><button>4</button>
+</p></div>
+<h3>Spaces for tabs, two character indent</h3>
+<p>And here is the example that doesn&rsquo;t include tabs at all, just spaces and a 2 tab indentation level. The benefit here is <em>unmistakable</em> intent.</p>
+<pre id="twoSpaces"></pre>
+<p>There is no chance for confusion and what you see is what you get.</p>
+<p>Contributors/teams do still need to set a common config as to the number of spaces for indentation, but that is better than assuming you don&rsquo;t need to do that with tabs and getting conflicting code style regardless.</p>
+<p>Personally, it really doesn&rsquo;t matter to me as long as there is a standard. If you use tabs, then you still need to add the tab width you are coding with to coding guidelines. The reason I use spaces is because the environment is self-describing. If you see two spaces, you know the guideline is a two character indentation level. If you see a tab and effed up alignment, you need to experiment with a few configurations in order to find the style the original developers were coding towards.</p>
+<p>(and yes, &ldquo;flexible&rdquo; or &ldquo;smart&rdquo; tabs <em>sound</em> awesome, but are impractical in mixed environments where IDE/editor support is so spotty)</p>
+<p><script id="fourSpaceTabExample" type="text/html">
+function foo() {
+	var someVar = 1,							// Some var
+		anotherVariable = 2,					// Another var
+		isThing = someVar === anotherVariable;	// Is thing?</script></p>
+<p>	if (someVar === otherVar)	bar();		// If we're otherVar
+	else if (isThing)			otherFn();	// Do awesome stuff
+	else						quux();		// Do bad stuff!!</p>
+<p>	function bar() {
+		if (anotherVariable === 42) {		// If it's the answer
+			anotherFunction();
+		}
+	}
+}
+<br><script id="twoSpaceTabExample" type="text/html">
+function foo() {
+	var someVar = 1,													// Some var
+		anotherVariable = 2,										// Another var
+		isThing = someVar === anotherVariable;	// Is thing?</script></p>
+<p>	if (someVar === otherVar)	bar();			// If we're otherVar
+	else if (isThing)					otherFn();	// Do awesome stuff
+	else											quux();			// Do bad stuff!!</p>
+<p>	function bar() {
+		if (anotherVariable === 42) {				// If it's the answer
+			anotherFunction();
+		}
+	}
+}
+<br><script id="blockIndentOnlyExample" type="text/html">
+function foo() {
+	var someVar = 1,                            // Some var
+	    anotherVariable = 2,                    // Another var
+	    isThing = someVar === anotherVariable;  // Is thing?</script></p>
+<p>	if (someVar === otherVar) bar();        // If we're otherVar
+	else if (isThing)         otherFn();    // Do awesome stuff
+	else                      quux();       // Do bad stuff!!</p>
+<p>	function bar() {
+		if (anotherVariable === 42) {     // Across block levels
+			anotherFunction();              // it still breaks
+		}
+	}
+}
+<br><script id="twoSpaceExample" type="text/html">
+function foo() {
+  var someVar = 1,                          // Some var
+    anotherVariable = 2,                    // Another var
+    isThing = someVar === anotherVariable;  // Is thing?</script></p>
+<p>  if (someVar === otherVar) bar();     // If we're otherVar
+  else if (isThing)         otherFn(); // Do awesome stuff
+  else                      quux();    // Do bad stuff!!</p>
+<p>  function bar() {
+    if (anotherVariable === 42) {      // If it's the answer
+      anotherFunction();
+    }
+  }
+}
+</p>
+<p><script src="https://rawgithub.com/jsoverson/TabFormatter/master/TabFormatter.min.js"></script></p>
+<p><script>
+  var $ = jQuery;</script></p>
+<p>function updateExample(example,numTabs) {
+$('#'+example+' pre').html(TabFormatter.format($('#'+example+'Example').html(),numTabs,'&nbsp;',1,'<span class="tab">','</span>'));
+}</p>
+<p>(function(){
+  $('.tabExample button').click(function(evt){
+    var target = $(evt.target);
+    var exampleId = target.parent().attr('id');
+    updateExample(exampleId,target.html());
+  });
+  updateExample('fourSpaceTab',4);
+  updateExample('twoSpaceTab',2);
+  updateExample('blockIndentOnly',2);
+  $('#twoSpaces').html($('#twoSpaceExample').html());
+})()
+</p>
+<p>
+<style>
+.tab {
+  padding:0;
+  margin:0;
+  display:inline-block;
+  background-color:hsl(0,0%,90%);
+}
+.tabExample pre {
+  margin-bottom:0;
+}
+.tabExample button {
+  width:15%;
+  height:22px;
+  margin:0 5px;
+}
+</style></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer"><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/blog/spaces-vs-tabs/" rel="bookmark"><time class="entry-date published" datetime="2012-09-22T15:55:03+00:00">September 22, 2012</time><time class="updated" datetime="2013-06-20T20:40:39+00:00">June 20, 2013</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Author </span><a class="url fn n" href="/blog/author/admin/">Jarrod</a></span></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/blog/category/uncategorized/" rel="category tag">Uncategorized</a></span>			</footer><!-- .entry-footer --></article><!-- #post-## --><div id="comments" class="comments-area">
+
+			<h2 class="comments-title">
+			39 thoughts on &ldquo;Why I use spaces over tabs&rdquo;		</h2>
+
+		
+		<ol class="comment-list"><li id="comment-636" class="comment even thread-even depth-1">
+			<article id="div-comment-636" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/c86bab02fa3df5d04a9642e45df8513d?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/c86bab02fa3df5d04a9642e45df8513d?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Matt Babineau</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-636">
+							<time datetime="2012-09-22T18:18:21+00:00">
+								September 22, 2012 at 6:18 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Jarrod- I also agree with what you&rsquo;re saying. Another EXCELLENT benefit of using 2 spaces/tab is that when you want to share code (stackoverflow, gist.github.com, jsfiddle.com, etc&hellip;) and you copy from your IDE and paste in the &ldquo;DHTML&rdquo; enabled textareas, you actually get readable, code. Try cutting/pasting something that is tab based!</p>
+<p>Additionally, I think I saw an option the other day in git to auto-change all tabs to spaces (you specific how many). So no matter the mix or preference of your development team, what gets committed at the end of the day is the same. Kind of like a coding zen garden <img src="/blog/wp-includes/images/smilies/simple-smile.png" alt=":-)" class="wp-smiley" style="height: 1em; max-height: 1em;"></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-823" class="comment odd alt thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-823" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/95f937c781b55dc676a94a9bc46473d7?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/95f937c781b55dc676a94a9bc46473d7?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="http://brad.is" rel="external nofollow" class="url">Brad Dougherty</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-823">
+							<time datetime="2013-02-04T00:32:28+00:00">
+								February 4, 2013 at 12:32 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>I&rsquo;ve seen a lot of arguments for using spaces that use this weird comment style (or some other sort of weird, contrived code style). You&rsquo;d have none of these issues if the comments were just on the line before.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1078" class="comment even depth-2">
+			<article id="div-comment-1078" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/cbc7f14c4d400e7923a4f7e7fa72c44b?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/cbc7f14c4d400e7923a4f7e7fa72c44b?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="http://opensourceame.com" rel="external nofollow" class="url">opensourceame</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1078">
+							<time datetime="2013-04-23T18:47:30+00:00">
+								April 23, 2013 at 6:47 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>@Brad Dougherty</p>
+<p>Putting comments on the end of the line is not &ldquo;weird&rdquo;. Nor is it the only case where people indent stuff *beyond* the initial indentation. It&rsquo;s common these days to use a &ldquo;column&rdquo; view of variable assignments, for example.</p>
+<p>Forcing everyone to put comments on the previous line, however, *is* weird and limiting.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+		<li id="comment-1088" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-1088" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/fb60928ea29470d767477dde926a19a6?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/fb60928ea29470d767477dde926a19a6?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">superbored</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1088">
+							<time datetime="2013-05-18T17:08:43+00:00">
+								May 18, 2013 at 5:08 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Forcing anyone to use your point of view about what is nice or not, *is* weird and limiting.<br>
+It&rsquo;s just a matter of style, PREFERENCES in the deep. Even when you think there is some advantage using one method or other, really all is a problem of preferences.<br>
+I used to use tabs, now i&rsquo;m moving to using spaces instead tabs, and exactly 2 spaces&hellip; i was doing it before reaching this site, so&hellip;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1093" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-1093" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/68dc96ae26655d52c44defbecece942a?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/68dc96ae26655d52c44defbecece942a?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Ludovic Urbain</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1093">
+							<time datetime="2013-06-18T08:50:43+00:00">
+								June 18, 2013 at 8:50 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>I&rsquo;m glad to see all the points made against 4-column-tabs are irrelevant in the real world.</p>
+<p>Now one concern is really important however: how do we achieve consistency ?</p>
+<p>How about, since 4-col-tabs are really the most standard, let&rsquo;s drop everything else ?</p>
+<p>Oh, and I have a whole blog post on the topic that really addresses all the points that can be made over tabs, spaces and other indentation.</p>
+<p><a href="http://ludovicurbain.blogspot.be/2013/06/code-indentation.html" rel="nofollow">http://ludovicurbain.blogspot.be/2013/06/code-indentation.html</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1094" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-1094" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/f6ef0bd903a5d97554c0fe50fd5846f1?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/f6ef0bd903a5d97554c0fe50fd5846f1?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="http://github.com/adriank" rel="external nofollow" class="url">Adrian Kalbarczyk</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1094">
+							<time datetime="2013-06-20T22:03:50+00:00">
+								June 20, 2013 at 10:03 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Every IDE/editor has (at least it should!) tab-&gt;spaces and backward transformation. If you like spaces then use them. I will get your code, my editor will automatically transform your spaces to tabs and I will feel like home. Next you will do the same (but the other way around) and you will be happy.</p>
+<p>The biggest issue about spaces is when you &ndash; a 2-spaces fan &ndash; work with a 4-spaces fan. How will you work? If you used tabs there would be no problem AT ALL. You will see 2 spaces, he &ndash; 4 spaces and you both will be happy.</p>
+<p>And about comments at the end&hellip; There is NOTHING more annoying than that! It&rsquo;s against readability. If you set your editor to not-wrapping mode then you need to scroll horizontally. On the other hand if you choose wrapping mode then there is nothing different in the look of your code and the code with comments one line before.</p>
+<p>I&rsquo;m writing this based on my own near 10-year experience in coding with many different people, many languages and environments and on dozens of projects.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1190" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-1190" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/f8f01f8ce1cb80ded50cf50588c53b08?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/f8f01f8ce1cb80ded50cf50588c53b08?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="http://42letters.com/" rel="external nofollow" class="url">Raitis</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1190">
+							<time datetime="2013-08-22T16:21:25+00:00">
+								August 22, 2013 at 4:21 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Comment blocks like that are terrible idea. What if I need to change 1 line and other 3 expands automatically to be visually aligned? I changed 1 line, but version control shows 4 changed lines.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1205" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-1205" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/cdc12ff3c5666c8ea0a71ce872555089?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/cdc12ff3c5666c8ea0a71ce872555089?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">chris</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1205">
+							<time datetime="2013-09-13T11:34:18+00:00">
+								September 13, 2013 at 11:34 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>If you ignore the side-aligned comments for a moment, then tabs come out of your demonstration pretty well, you can modify the tab size and the code looks good for everyone.</p>
+<p>I personally like the side-style comments, however, obviously, you can&rsquo;t indent them with tabs because they fall apart with different tab widths. You need them to be the same size so that all the lines will always match up.</p>
+<p>It&rsquo;s good that the indent sizes can be changed, but it&rsquo;s bad that the comment gap sizes can be changed.</p>
+<p>Therefore, to me, the solution is clear: use tabs for indentation, and use spaces for alignment in situations where tabs will not work. It&rsquo;s not inconsistency, it&rsquo;s just *using the right tool for the job*.</p>
+<p>This has the advantage of not inflicting your tab width choices on other people, while also being able to produce aligned comments and code and stuff. The only problem is that some editors want to transmute your tabs to spaces or back again &mdash; which I feel is quite wrong, as they are not the same thing.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1206" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-1206" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/aa5a2a130bf4e7ae673cc789c576ad37?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/aa5a2a130bf4e7ae673cc789c576ad37?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="http://www.watchsintellice.com/" rel="external nofollow" class="url">&#12450;&#12523;&#12510;&#12540;&#12491; &#35413;&#21028;</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1206">
+							<time datetime="2013-10-07T07:16:47+00:00">
+								October 7, 2013 at 7:16 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>reibann</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1233" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-1233" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/d3a6d56fdce31d63d718fe7acb7e26d2?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/d3a6d56fdce31d63d718fe7acb7e26d2?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Algerator</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1233">
+							<time datetime="2013-10-31T08:54:13+00:00">
+								October 31, 2013 at 8:54 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>The main reason to use tabs rather than spaces IMO: I don&rsquo;t know about you guys, but I mostly navigate through the code using the arrow keys. It is so annoying when I find some code indented with spaces and I have to go through all these spaces to reach the word i want to edit!</p>
+<p>And seeing that the main reasoning for using spaces is the side-line comments (which I personally use and like as much as the above-line comments), here is the alternative: Let&rsquo;s agree with all the team the width of the tab character so everyone can see the code well formatted.<br>
+You&rsquo;d have to reach an agreement anyways if using spaces regarding the amount of spaces to use, so why not use tabs and agree in the tab width configuration instead?</p>
+<p>I don&rsquo;t really see the point of using spaces <img src="/blog/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;"></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1242" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-1242" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/372f7eb2147aaf902ad194dff78cabce?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/372f7eb2147aaf902ad194dff78cabce?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">P5ycH0</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1242">
+							<time datetime="2013-11-13T13:00:57+00:00">
+								November 13, 2013 at 1:00 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>I think the most spaces vs tabs discussions are about indentation.<br>
+Not about how you align comments &amp; other stuff.</p>
+<p>There is no advantage on using spaces over tabs for indentation IMO.<br>
+It&rsquo;s annoying to navigate through spaces with the keyboard.<br>
+It slows you down when you are trying to select text which starts the beginning of a line (You have to be more precise to NOT include the space).</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1257" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-1257" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/cbe00b1aadb60884ea51957036cac5ae?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/cbe00b1aadb60884ea51957036cac5ae?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">ZeTa</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1257">
+							<time datetime="2013-12-10T06:31:53+00:00">
+								December 10, 2013 at 6:31 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>There is only ONE case when you should block indent with spaces, and that is if you are pasting code into an editor that does not support tabs. &#128539;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1260" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-1260" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/2180c5a6905560169acda8ada4dc3431?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/2180c5a6905560169acda8ada4dc3431?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Idea</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1260">
+							<time datetime="2014-01-14T13:47:35+00:00">
+								January 14, 2014 at 1:47 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>!)<br>
+Almost all programs use now tab = 4 spaces as default;<br>
+All programs allow to customize the tab length.</p>
+<p>2)<br>
+Experience:<br>
+Once, i had a very long PHP file. I replaced every 4 spaces with 1 TAB. After, the file was 50kb LIGHTER!<br>
+The server with the repository had hundred of such files. A lot of Mb wasted.</p>
+<p>3)<br>
+not possible to have problem like using 7 spaces instead of 8</p>
+<p>4)<br>
+not need to agree how many tabs to use: tabs is always one, spaces are usually 4, but some prefer 2 spaces.</p>
+<p>5)<br>
+it&rsquo;s FASTER to tab than to 4-space</p>
+<p>6)<br>
+In a file with TAB, one can know which character is used for indentation and which one for spacing.</p>
+<p>&mdash;<br>
+Compared to that, the problems mentioned in this article are irrelevant, and anyway very rare.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1274" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-1274" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/770a1f4797cc0879dd9e4954104767b1?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/770a1f4797cc0879dd9e4954104767b1?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">WayneB</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1274">
+							<time datetime="2014-03-13T17:56:57+00:00">
+								March 13, 2014 at 5:56 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Spaces are bad for indentation for much more common reasons than what you&rsquo;ve listed here for Tabs.</p>
+<p>The number one complaint about spaces is that they&rsquo;re more work to de-dent in most editors because you can&rsquo;t effectively use the Backspace key. Go edit some code in JSFiddle and try de-denting your code by pressing Backspace. You have to press it four times to de-dent. If you used two-space indents, you&rsquo;d have to hit it two times. Twice or four times the work.</p>
+<p>Also, many editors get de-denting wrong so you can&rsquo;t even fall back to using Shift+Tab. Try de-denting *just* the word Hello in this code without using Backspace &ndash; <a href="http://jsfiddle.net/p74ve/" rel="nofollow">http://jsfiddle.net/p74ve/</a></p>
+<p>It&rsquo;s funny that it seems to be mostly web programmers who prefer spaces &ndash; which were not invented for indentation &ndash; as they shoe-horn HTML and HTTP into any and every possible role.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1278" class="comment even thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-1278" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/2180c5a6905560169acda8ada4dc3431?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/2180c5a6905560169acda8ada4dc3431?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Supermenn</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1278">
+							<time datetime="2014-04-10T09:47:00+00:00">
+								April 10, 2014 at 9:47 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Space vs tab, a different opinion. Why I prefer tab (or: why tab exist):<br>
+1)<br>
+Almost all programs use now tab = 4 spaces as default;<br>
+All programs allow to customize the tab length.</p>
+<p>2)<br>
+Saved space:<br>
+Once, i had a very long PHP file. I replaced every 4 spaces with 1 TAB. After, the file was 50kb LIGHTER!<br>
+The server with the repository had hundred of such files. A lot of space wasted with no gain.</p>
+<p>4)<br>
+not need to agree how many tabs to use: tabs is always 1, spaces are usually 4, but some prefer 2 spaces.</p>
+<p>6)<br>
+In a file with TAB, one can know which character is used for indentation and which one for &ldquo;string spacing&rdquo;.</p>
+<p>3)<br>
+no problems because somebody used 15 spaces instead of 16</p>
+<p>5)<br>
+it&rsquo;s faster to type a tab than to 4 spaces</p>
+<p>7)<br>
+the allignment is easier to obtain, the comments are nicer to see with less effort<br>
+&mdash;<br>
+Conclusions<br>
+&ndash; Of course, that&rsquo;s only my opinion and anybody can have a different one.<br>
+&ndash; I think that (2) is the one that in practice has more importance, and generally most of them are part of the reasons why TAB exists.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1281" class="comment odd alt depth-2 parent">
+			<article id="div-comment-1281" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/1ec97ad756dfa8ba1a86311514a064ea?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/1ec97ad756dfa8ba1a86311514a064ea?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="http://twitter.com/alexs77" rel="external nofollow" class="url">AlexS77</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1281">
+							<time datetime="2014-04-22T09:08:00+00:00">
+								April 22, 2014 at 9:08 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Re. &ldquo;2: Saved space on disk&rdquo;<br>
+This is IMO no longer relevant. We&rsquo;re in the age of terabyte disks. Also with compressing proxies (Opera and Google) and also on-the-fly gzip compression done by the server and undone by the client, over-the-wire space isn&rsquo;t that important either &ndash; especially, if one takes into consideration, how many images and how huge these beasts are.</p>
+<p>No, space is no matter. That&rsquo;s not the 90ies anymore.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1282" class="comment even depth-3">
+			<article id="div-comment-1282" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/2180c5a6905560169acda8ada4dc3431?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/2180c5a6905560169acda8ada4dc3431?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Supermenn</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1282">
+							<time datetime="2014-04-22T13:57:00+00:00">
+								April 22, 2014 at 1:57 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Maybe it&rsquo;s not very relevant&hellip; but you don&rsquo;t gain anything by using more space and generating more C02.<br>
+And here another one:<br>
+8) when you move some code from an inner block to an outer one, it&rsquo;s easier to remove 1 TAB for each line than 4 (or X) spaces. Example:<br>
+&hellip;<br>
+if(condition)<br>
+{<br>
+    boolean condition = true //this code must be moved before the if(1)<br>
+   &hellip;.</p>
+<p>}</p>
+<p>// (PS i saved this code with spaces but they are removed by disquss)</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1283" class="comment odd alt depth-3">
+			<article id="div-comment-1283" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/2f968cfb1370fd4e70518e4c68d80a91?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/2f968cfb1370fd4e70518e4c68d80a91?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="http://www.AncientBeast.com/" rel="external nofollow" class="url">Dread Knight</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1283">
+							<time datetime="2014-05-07T12:06:00+00:00">
+								May 7, 2014 at 12:06 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Some areas have problems with bandwidth and slow connections, so adding a few dozen useless kb to your pages means a few extra seconds for them to load.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1316" class="comment even depth-3">
+			<article id="div-comment-1316" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Alhadis</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1316">
+							<time datetime="2015-08-28T13:30:00+00:00">
+								August 28, 2015 at 1:30 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>No, space is very much a relevant matter, thanks. In one handover job earlier this year, we were doing a database backup over a slow connection, and the 10 GBs dump took forever to download. When I checked the tables to find which were the ones had caused the most bloat, I found a 5000+ long log of HTML newsletters that&rsquo;d been sent over the years. One of the columns logged the template code, which &ndash; surprise, surprise, had been indented using spaces.</p>
+<p>Granted, this is an edge case and the dump still would&rsquo;ve been huge, but had the coder have used tabs for indentation, the damn log wouldn&rsquo;t have taken forever to transfer when we already had our hands full.</p>
+<p>Furthermore, people who argue that Gzip compression eliminates all latency concerns with space-delimited code probably forget that their bandwidth could *still* be optimised even further by sticking to tabs for indentation instead of spaces. And, hey, sure you could argue that in an age of hyper-fast broadband that&rsquo;s no longer relevant either, but remember mobile users &ndash; and even with 120-bytes of useless junk shaved off every plain-text file transferred, it has a pretty big impact in the long-term.</p>
+<p>*TL;DR:* Use .editorconfig to set your formatting preferences and give the whole &ldquo;it looks different to other coders&rdquo; crap a rest.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+		<li id="comment-1305" class="comment odd alt depth-2 parent">
+			<article id="div-comment-1305" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/781f66c42983ae7ee3123bbd620d8568?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/781f66c42983ae7ee3123bbd620d8568?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Matt</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1305">
+							<time datetime="2015-01-09T18:31:00+00:00">
+								January 9, 2015 at 6:31 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>&gt; All programs (or almost) show tab = 4 spaces as default</p>
+<p>Not all programs default at 4 tabs.  IDEs for Ruby default to 2 spaces, for example.</p>
+<p>&gt; All programs (or almost) allow to customize the tab length.</p>
+<p>This is true, but this assumes that you *know* what the intent of the coder was.  I will have to keep playing with tab sizes until it finally looks right.  However, different developers have different settings, and their code reflects that.  In the case of open-source software, for example, you end up with code contributions of differing whitespace alignment, which I&rsquo;ve seen over and over again.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1317" class="comment even depth-3">
+			<article id="div-comment-1317" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Alhadis</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1317">
+							<time datetime="2015-08-28T13:33:00+00:00">
+								August 28, 2015 at 1:33 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Then I suggest you use .editorconfig files so these nuisances can someday be made history. The beauty of these files is that they outline the coder&rsquo;s intent in plain-writing, and IDEs can be configured to set project-specific whitespace settings from its .editorconfig manifest.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+		<li id="comment-1284" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-1284" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/3482cb940def535e01f0b8f9d7db7f41?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/3482cb940def535e01f0b8f9d7db7f41?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Nathan Holtman</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1284">
+							<time datetime="2014-05-16T22:04:00+00:00">
+								May 16, 2014 at 10:04 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>You can make the third example code work perfect with tabs and spaces:</p>
+<p><a href="http://pastebin.com/qNNkc3xT" rel="nofollow">http://pastebin.com/qNNkc3xT</a></p>
+<p>You just have to be patient and add staces to lines that have less chars than other lines, and add tabs before the comments.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1285" class="comment even thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-1285" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/44547f311d6e4037067b3fd120d5e931?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/44547f311d6e4037067b3fd120d5e931?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">DMC</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1285">
+							<time datetime="2014-06-06T15:55:00+00:00">
+								June 6, 2014 at 3:55 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Tabs are clearly superior to spaces <img src="/blog/wp-includes/images/smilies/simple-smile.png" alt=":-)" class="wp-smiley" style="height: 1em; max-height: 1em;"></p>
+<p>Take the scenario where you&rsquo;re using spaces.<br>
+You want to indent a line? You press TAB and the editor gives you X spaces.<br>
+You decide you didn&rsquo;t want to indent that line? Press Backspace. Instead of removing the indentation, you now have an indentation of X-1 spaces.</p>
+<p>I rest my case&hellip;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1286" class="comment odd alt depth-2 parent">
+			<article id="div-comment-1286" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/f59c5111d4631206c0b00a208f619890?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/f59c5111d4631206c0b00a208f619890?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">LJE</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1286">
+							<time datetime="2014-06-12T17:50:00+00:00">
+								June 12, 2014 at 5:50 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Any decent editor is either smart enough to figure that out on its own and remove the entire indentation worth of spaces, or configurable enough that you can make it behave that way. Worst case, use shift+tab.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1300" class="comment even depth-3">
+			<article id="div-comment-1300" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/2180c5a6905560169acda8ada4dc3431?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/2180c5a6905560169acda8ada4dc3431?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Supermenn</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1300">
+							<time datetime="2014-09-25T10:41:00+00:00">
+								September 25, 2014 at 10:41 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>When programs are &ldquo;too&rdquo; smart, they often take decision when they shouldn&rsquo;t and make stupid things</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1319" class="comment odd alt depth-3 parent">
+			<article id="div-comment-1319" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Alhadis</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1319">
+							<time datetime="2015-08-28T13:39:00+00:00">
+								August 28, 2015 at 1:39 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Lewis: you&rsquo;re implying every editor will have that configuration. If I have to patch something in Notepad in a VMWare environment, I&rsquo;m going to be using the tab key to indent code. Period.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1320" class="comment even depth-4 parent">
+			<article id="div-comment-1320" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/f59c5111d4631206c0b00a208f619890?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/f59c5111d4631206c0b00a208f619890?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="http://LewisJEllis.com/" rel="external nofollow" class="url">Lewis Ellis</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1320">
+							<time datetime="2015-08-28T17:09:00+00:00">
+								August 28, 2015 at 5:09 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>You can&rsquo;t possibly be serious. If you&rsquo;re going to be editing code in Notepad so frequently that this matters (i.e. at all, ever), you would immediately benefit from making some easy changes to your environment.</p>
+<p>Notepad is quite literally the only editor anyone would ever use ever that doesn&rsquo;t support using spaces for indentation &ndash; even nano can do it &ndash; so yes, I am indeed implying that every editor that matters will have that configuration. It&rsquo;s ridiculous to bring up Notepad while you&rsquo;re going around telling everyone to just use .editorconfig, which some editors don&rsquo;t support at all (and almost all editors that do need a plugin).</p>
+<p>Playing nicely with a bad editor that can&rsquo;t even get line breaks right is simply not on the list of things I&rsquo;m worried about. If you&rsquo;re editing code inside a VM and not being obtuse about it, then you should have some way to get those changes into your source control. This means either having a development environment in the VM (and thus not needing Notepad) or having a volume mounted to your host machine (and thus not needing Notepad).</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1321" class="comment odd alt depth-5 parent">
+			<article id="div-comment-1321" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Alhadis</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1321">
+							<time datetime="2015-08-29T01:42:00+00:00">
+								August 29, 2015 at 1:42 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Slight error in communication here. I wasn&rsquo;t implying one would *want* to code in Notepad, simply that sometimes, coders won&rsquo;t always have a choice in what program they have to use.</p>
+<p>Going back to my original hypothetic example, in the off-chance that I AM making a stupid fix to crap code in a restrictive environment, I&rsquo;m not going to copy+paste diarrhetic runs of space characters just to appease some a spaced-out coder, or mindlessly tapping the spacebar like a confused old person. I&rsquo;m going to be hitting the tab key, which I can do so in a proper editor, too.</p>
+<p>(I&rsquo;ll admit this is an edge case that&rsquo;s kinda tangential to the main discussion).</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1322" class="comment even depth-5">
+			<article id="div-comment-1322" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/f59c5111d4631206c0b00a208f619890?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/f59c5111d4631206c0b00a208f619890?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="http://LewisJEllis.com/" rel="external nofollow" class="url">Lewis Ellis</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1322">
+							<time datetime="2015-08-29T05:11:00+00:00">
+								August 29, 2015 at 5:11 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Yes, I understand your hypothetical, and of course nobody would *want* to code in Notepad &ndash; I just don&rsquo;t buy the notion that anyone is ever actually stuck with Notepad for actually editing actual code.</p>
+<p>There&rsquo;s a sort of similar argument that we need to support old web browsers because enterprise IT departments are five years behind, and thus people are stuck with IE8 at work. I buy that, and there are numbers to back it up, but being five years behind on your browser is completely different from being 20+ years behind on your editor. Any developer with enough freedom to do his/her job also has enough freedom to use something (literally anything) other than Notepad.</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+		<li id="comment-1296" class="comment odd alt thread-even depth-1 parent">
+			<article id="div-comment-1296" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/6b6225db96d6fb4a34c6d50a9171d13f?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/6b6225db96d6fb4a34c6d50a9171d13f?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="http://www.dereuromark.de/" rel="external nofollow" class="url">Mark Scherer</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1296">
+							<time datetime="2014-07-29T00:22:00+00:00">
+								July 29, 2014 at 12:22 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Your examples to justify spaces are flawed IMO.<br>
+You shouldn&rsquo;t use alignment of comments this way in the first place &ndash; simply for the reason that this creates a lot of additional noise in change diffs (Github PR diffs for example). And that is independent from whether spaces or tabs are used.<br>
+Imagine one line becoming longer, all other lines (above and below) would also need adjustment of the comment indentation. That&rsquo;s just stupid.</p>
+<p>You should be using<br>
+a) Tabs<br>
+b) Never indent your comments (neither with spaces nor with tabs).</p>
+<p>$someVar = &lsquo;foo&rsquo;; // Some comment<br>
+$someOtherVar = &lsquo;bar&rsquo;; // Some other comment</p>
+<p>Directly after the code a comment follows separated by a single space.</p>
+<p>Clean, easy, minimal noise, future proof and the right way to do it.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1318" class="comment even depth-2">
+			<article id="div-comment-1318" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Alhadis</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1318">
+							<time datetime="2015-08-28T13:37:00+00:00">
+								August 28, 2015 at 1:37 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>^ This. All of my this.</p>
+<p>Unless I&rsquo;m writing YAML, Markdown, or text intended to be read in a terminal, I always indent my code with leading hard tabs. Because, yeah, that&rsquo;s kinda why tabs were invented&hellip; to indent text into columns.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+		<li id="comment-1303" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-1303" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/907d3b7b04855bee1c8be00860758a16?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/907d3b7b04855bee1c8be00860758a16?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Scott Lembcke</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1303">
+							<time datetime="2014-11-02T00:24:00+00:00">
+								November 2, 2014 at 12:24 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Hah. Why not. I&rsquo;ll bite and join in the holy war.</p>
+<p>I really dislike indentation using spaces since I&rsquo;ve yet to see an editor that will replace 4 spaces with 2. You put a line of code in an if statement in a for loop in a method in a class? Seems a reasonable level of complexity, until you realize it&rsquo;s a quarter of the way across the screen. Kind of joking, but I find having that much white space in a file very distracting.</p>
+<p>On the flip side of &ldquo;tying other to your style descision&rdquo; is that by using spaces, you are tying others to how much white space looks &ldquo;normal&rdquo; to you. Tabs are the magical solution that makes it possible for everybody to be happy.</p>
+<p>My opinion on carefully aligned comments is just don&rsquo;t do it. If you are like me, every job or open source project you look at seems to have an annoying mix of tabs and spaces that will make them always wrong all the time anyway. Until compilers decide that one or the other is a compile error anyway&hellip;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1304" class="comment even thread-even depth-1">
+			<article id="div-comment-1304" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/242a4a40838ce152d5fabb7643c0e744?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/242a4a40838ce152d5fabb7643c0e744?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="http://www.nosqlbr.com.br" rel="external nofollow" class="url">Suissa</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1304">
+							<time datetime="2014-12-16T20:21:00+00:00">
+								December 16, 2014 at 8:21 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Comma-first with 2 spaces is &lt;3</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1308" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-1308" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://0.gravatar.com/avatar/3224bdd07418fa3cc75a13ff26b5521f?s=56&amp;r=r" srcset="http://0.gravatar.com/avatar/3224bdd07418fa3cc75a13ff26b5521f?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">&Scaron;tefan Oravec</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1308">
+							<time datetime="2015-02-09T14:44:00+00:00">
+								February 9, 2015 at 2:44 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>I don&rsquo;t get this discussions about tabs over spaces. We have stupid but fast computers and clever but slow people. So why is anybody doing stuff that can be done by computer? Like indenting the code. I think that it is waste of time and money and even more money to manually format code. Just specify some formating rules and use them!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1311" class="comment even thread-even depth-1">
+			<article id="div-comment-1311" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/7d232678b73a1e141d1d0fb4645f7321?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/7d232678b73a1e141d1d0fb4645f7321?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Alex</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1311">
+							<time datetime="2015-04-12T15:08:00+00:00">
+								April 12, 2015 at 3:08 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>I have to agree that the alignment you use for the comments and the contents of the if/else blocks just slows down my reading of the code. I suggest that our minds are adaptable enough to work just as efficiently without that level of formatting. Vertical separation does far more to distinguish which parts of the code are related. We    tend   to   read     less    efficiently           when      thoughts      are   spread        across         a     greater     horizontal                          distance.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-1324" class="comment odd alt thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-1324" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/15c836c2cdd6f72e2fcf9a230632768d?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/15c836c2cdd6f72e2fcf9a230632768d?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Carlos Vinicus</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1324">
+							<time datetime="2015-10-31T02:45:00+00:00">
+								October 31, 2015 at 2:45 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>I&rsquo;ve reading tabs vs spaces arguments for years and always stick with the tabs team. But I&rsquo;ve never seen an good explanation on the &ldquo;leads to confusion&rdquo; argument. Congratulations, I&rsquo;m going to be an space dude for now on. Hallelujah brother!</p>
+<p>WOLOLO</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1325" class="comment even depth-2 parent">
+			<article id="div-comment-1325" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Alhadis</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1325">
+							<time datetime="2015-10-31T07:29:00+00:00">
+								October 31, 2015 at 7:29 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>I hope you&rsquo;re being sarcastic, because that &ldquo;explanation&rdquo; was an incredibly contrived one.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1326" class="comment odd alt depth-3 parent">
+			<article id="div-comment-1326" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/5fb7a86e278e5b3b427f3b9a3cda71e1?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/5fb7a86e278e5b3b427f3b9a3cda71e1?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Robin Munn</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1326">
+							<time datetime="2016-01-18T08:18:00+00:00">
+								January 18, 2016 at 8:18 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>You may think it&rsquo;s incredibly convoluted, but I&rsquo;ve seen WAY too many files with that exact problem: one developer had used 4-space tabs while writing the file, another had used 2-space (or 8-space) tabs, and now there&rsquo;s no way to line up the comments they intended to be lined up.</p>
+<p>I agree with the tab advocates that tabs are clearly superior, <i>in theory</i>. But <i>in practice</i>, people use them wrong. It&rsquo;s impossible to get spaces wrong, hence my STRONG preference for spaces: because I&rsquo;ve seen too many developers screw up their files using tabs. The larger file size problem with spaces comes a distant second compared to the &ldquo;Yikes, this file looks ugly as sin&rdquo; effect that I get when I open one of those files where multiple people have edited it incorrectly with varying tab settings.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1327" class="comment even depth-4">
+			<article id="div-comment-1327" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/ed9bd09e90afd13633429b5d482b1135?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Alhadis</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/spaces-vs-tabs/#comment-1327">
+							<time datetime="2016-01-18T08:21:00+00:00">
+								January 18, 2016 at 8:21 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>So the issue is simply a matter of people not using spaces for *alignment* and tabs for *indentation*.</p>
+<p>Quite simply, if you&rsquo;re using tabs to neatly align anything for aesthetic purposes, you&rsquo;re inviting doom.</p>
+<p>Solution: if your IDE doesn&rsquo;t allow &ldquo;smart tabbing&rdquo; (switching to spaces when inserting an indent after a non-whitespace character), just avoid aligning with tabs altogether (or just save your effort for manually aligning more pertinent things like comment blocks).</p>
+<p>It&rsquo;s funny that you mention the &ldquo;ugly as sin&rdquo; part, because that&rsquo;s exactly what I think whenever I read any 2-space indented JavaScript these days. Seriously.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+		</ol><!-- .comment-list --><div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/spaces-vs-tabs/#respond" style="display:none;">Cancel reply</a></small></h3><p class="must-log-in">You must be <a href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Fspaces-vs-tabs%2F">logged in</a> to post a comment.</p>		</div><!-- #respond -->
+		
+</div><!-- .comments-area -->
+
+	<nav class="navigation post-navigation" role="navigation"><h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="/blog/grunt-require-dir-published-to-npm/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">grunt-require-dir published to npm</span></a></div><div class="nav-next"><a href="/blog/a-month-of-gruntjs/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">A month of gruntjs</span></a></div></div>
+	</nav></main><!-- .site-main --></div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo"><div class="site-info">
+						<a href="https://wordpress.org/">Proudly exported from and no longer reliant on WordPress</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer --></div><!-- .site -->
+
+<script type="text/javascript" src="/blog/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010"></script><script type="text/javascript" src="/blog/wp-includes/js/comment-reply.min.js?ver=4.4.2"></script><script type="text/javascript">
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script><script type="text/javascript" src="/blog/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330"></script><script type="text/javascript" src="/blog/wp-includes/js/wp-embed.min.js?ver=4.4.2"></script></body></html>

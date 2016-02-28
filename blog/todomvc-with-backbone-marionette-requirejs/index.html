@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="profile" href="http://gmpg.org/xfn/11"><link rel="pingback" href="/blog/xmlrpc.php"><!--[if lt IE 9]>
+	<script src="/blog/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]--><script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script><title>Todomvc with Backbone.Marionette + Requirejs  &ndash; JarrodOverson.com</title><link rel="alternate" type="application/rss+xml" title="JarrodOverson.com &raquo; Feed" href="/blog/feed/"><link rel="alternate" type="application/rss+xml" title="JarrodOverson.com &raquo; Comments Feed" href="/blog/comments/feed/"><link rel="alternate" type="application/rss+xml" title="JarrodOverson.com &raquo; Todomvc with Backbone.Marionette + Requirejs Comments Feed" href="/blog/todomvc-with-backbone-marionette-requirejs/feed/"><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/jarrodoverson.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style><link rel="stylesheet" id="twentyfifteen-fonts-css" href="https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all"><link rel="stylesheet" id="genericons-css" href="/blog/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2" type="text/css" media="all"><link rel="stylesheet" id="twentyfifteen-style-css" href="/blog/wp-content/themes/twentyfifteen/style.css?ver=4.4.2" type="text/css" media="all"><!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='/blog/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]--><!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='/blog/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]--><script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery.js?ver=1.11.3"></script><script type="text/javascript" src="/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script><link rel="https://api.w.org/" href="/blog/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/blog/xmlrpc.php?rsd"><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/blog/wp-includes/wlwmanifest.xml"><link rel="prev" title="Ergotron Workfit-S vs Workfit-A" href="/blog/ergotron-workfit-s-vs-workfit-a/"><link rel="next" title="Running jasmine through phantomjs : grunt-jasmine-runner" href="/blog/running-jasmine-through-phantomjs-grunt-jasmine-runner/"><meta name="generator" content="WordPress 4.4.2"><link rel="canonical" href="/blog/todomvc-with-backbone-marionette-requirejs/"><link rel="shortlink" href="/blog/?p=285"><link rel="alternate" type="application/json+oembed" href="/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Ftodomvc-with-backbone-marionette-requirejs%2F"><link rel="alternate" type="text/xml+oembed" href="/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Ftodomvc-with-backbone-marionette-requirejs%2F&amp;format=xml"><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #adadad; }
+</style></head><body class="single single-post postid-285 single-format-standard custom-background">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="/blog/todomvc-with-backbone-marionette-requirejs/#content">Skip to content</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner"><div class="site-branding">
+										<p class="site-title"><a href="/blog/" rel="home">JarrodOverson.com</a></p>
+									<button class="secondary-toggle">Menu and widgets</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header --><div id="secondary" class="secondary">
+
+		
+		
+					<div id="widget-area" class="widget-area" role="complementary">
+				<aside id="text-2" class="widget widget_text"><h2 class="widget-title">I &hearts; the web</h2>			<div class="textwidget"><p><img src="http://www.gravatar.com/avatar/74be2e435d69a5827de7b5d33e7b343d" style="border-radius:5px; width:50px;float:left; margin-right:5px"></p>
+<p>I'm Jarrod, a web addict of moderately unhealthy proportions. I advocate for all things web, am a regular contributor to <a href="http://github.com/jsoverson">Open Source</a>, and am an engineer at <a href="http://shapesecurity.com/">Shape Security</a>.</p>
+</div>
+		</aside><aside id="linkcat-22" class="widget widget_links"><h2 class="widget-title">Books</h2>
+	<ul class="xoxo blogroll"><li><a href="http://shop.oreilly.com/product/0636920032922.do">O'Reilly's Developing Web Components</a></li>
+
+	</ul></aside><aside id="linkcat-23" class="widget widget_links"><h2 class="widget-title">Projects</h2>
+	<ul class="xoxo blogroll"><li><a href="https://github.com/jsoverson/plato" title="JavaScript complexity analysis and visualization tool">Plato &ndash; JavaScript complexity analysis</a></li>
+<li><a href="/static/demos/particleSystem/" title="Interactive Particle System written in JavaScript using HTML5 canvas">JavaScript Particle System</a></li>
+<li><a href="http://jsoverson.github.com/jquery.pulse.js/">jQuery Pulse Plugin</a></li>
+<li><a href="http://gitfaq.org/" title="Git FAQ">GitFAQ.org</a></li>
+
+	</ul></aside></div><!-- .widget-area -->
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+<style>
+	#static-notice {
+		font-family:sans-serif;
+		text-align:center;
+		background-color:#F44336;
+		color:#FFFFFF;
+	}
+	#static-notice p {
+		padding:10px 0;
+	}
+	#static-notice a {
+		color:#FFFFFF;
+		text-decoration:underline;
+	}
+</style>
+<div id="static-notice">
+	<h2>Notice!</h2>
+<p>
+This is a static archive. Some links may not work.
+<br>
+	Please visit <a href="http://jarrodoverson.com">jarrodoverson.com</a>
+for updated content.
+</p>
+</div>
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main"><article id="post-285" class="post-285 post type-post status-publish format-standard hentry category-uncategorized"><header class="entry-header"><h1 class="entry-title">Todomvc with Backbone.Marionette + Requirejs</h1>	</header><!-- .entry-header --><div class="entry-content">
+		<p>I recently completed an app I&rsquo;m planning on using for JavaScriptU in october and wrote it in the style of Addy Osmani&rsquo;s TodoMVC repo so that it can be more easily compared to other frameworks.</p>
+<p><a title="TodoMVC with Marionette and RequireJS" href="http://jsoverson.github.com/todomvc/labs/dependency-examples/backbone_marionette_require/">Backbone.Marionette + RequireJS TodoMVC</a>&nbsp;(<a title="Source code" href="https://github.com/jsoverson/todomvc/tree/master/labs/dependency-examples/backbone_marionette_require">source</a>)</p>
+<p>It differs a little bit in the style I would normally adhere to in order to make it as simple as possible for the sake of easy comparison. I tried to inject as little of my own bias in it as possible, except for very small file sizes and global jQuery and underscore.</p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer"><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/blog/todomvc-with-backbone-marionette-requirejs/" rel="bookmark"><time class="entry-date published updated" datetime="2012-08-25T22:23:52+00:00">August 25, 2012</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Author </span><a class="url fn n" href="/blog/author/admin/">Jarrod</a></span></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/blog/category/uncategorized/" rel="category tag">Uncategorized</a></span>			</footer><!-- .entry-footer --></article><!-- #post-## --><div id="comments" class="comments-area">
+
+			<h2 class="comments-title">
+			7 thoughts on &ldquo;Todomvc with Backbone.Marionette + Requirejs&rdquo;		</h2>
+
+		
+		<ol class="comment-list"><li id="comment-610" class="comment even thread-even depth-1">
+			<article id="div-comment-610" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/46e364edaa919732401f8ea7e65fd07e?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/46e364edaa919732401f8ea7e65fd07e?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Ted Killilea</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/todomvc-with-backbone-marionette-requirejs/#comment-610">
+							<time datetime="2012-09-19T15:00:22+00:00">
+								September 19, 2012 at 3:00 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Hi Jarrod,</p>
+<p>I liked your Marionette/RequireJS project on Github.  Can I ask, what&rsquo;s the reason/benefit of using tpl! vs text! when loading your templates?  </p>
+<p>I use underscore to load templates like so: </p>
+<p>define([&lsquo;marionette&rsquo;,&rsquo;underscore&rsquo;, &lsquo;text!templates/book.htm&rsquo;], function(Marionette, _, htmlTemplate) {</p>
+<p> template: _template( htmlTemplate);</p>
+<p>I also prefer &lsquo;MUSTACHE&rsquo; style templates {{ }}  as opposed to ERB  style and tweak underscore to handle them with:</p>
+<p>_.templateSettings = {<br>
+    interpolate : /\{\{(.+?)\}\}/g<br>
+};</p>
+<p>I hadn&rsquo;t seen the tpl! plugin, just thought I&rsquo;d ask before google for it&hellip;</p>
+<p>BTW, I grew up in SoCal and have family living in San Diego, you&rsquo;ve got it all right there!  My brother lives in the Allied Gardens area near SDSU, he affectionately calls it the &lsquo;AG&rsquo;</p>
+<p>Thanks and Regards,</p>
+<p>&ndash;Ted</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Ftodomvc-with-backbone-marionette-requirejs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-612" class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-612" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/74be2e435d69a5827de7b5d33e7b343d?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/74be2e435d69a5827de7b5d33e7b343d?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="" rel="external nofollow" class="url">Jarrod</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/todomvc-with-backbone-marionette-requirejs/#comment-612">
+							<time datetime="2012-09-19T17:49:19+00:00">
+								September 19, 2012 at 5:49 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Hi Ted,<br>
+  The tpl plugin not only grabs the referred file (like the text plugin), but it automatically compiles it as an underscore template. During the build process it also precompiles all your templates into the built file.</p>
+<p>It&rsquo;s very useful and has worked well with all projects I&rsquo;ve used. </p>
+<p><a href="https://github.com/ZeeAgency/requirejs-tpl" rel="nofollow">https://github.com/ZeeAgency/requirejs-tpl</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Ftodomvc-with-backbone-marionette-requirejs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		<li id="comment-818" class="comment even thread-even depth-1 parent">
+			<article id="div-comment-818" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://2.gravatar.com/avatar/e794f491af32ee84fd8a75bfc6e935f0?s=56&amp;r=r" srcset="http://2.gravatar.com/avatar/e794f491af32ee84fd8a75bfc6e935f0?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Leonard</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/todomvc-with-backbone-marionette-requirejs/#comment-818">
+							<time datetime="2013-01-16T19:06:43+00:00">
+								January 16, 2013 at 7:06 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Hello Jarrod,<br>
+thank you very much for this example, I&rsquo;m learning Marionette following your repo.<br>
+The problem is that it is quite different from what Addy and Derick describe on Addy Osmani&rsquo;s book &ldquo;backbone foundamental&rdquo;.<br>
+I like your approach with the AMD and Require.js but I&rsquo;m getting confused because I could not find a good description of your implementation. Maybe I&rsquo;m asking too much but would you consider to write a short article based on Addy and Derick Marionette description of the ToDoMVC but focused on your implementation? I&rsquo;m quite sure it will help some guys out there, especially the folks like me with no much Backbone experience.</p>
+<p>Also, what if I would use Mustache or IcanHaz.js as templating system?<br>
+In the case of ICanHaz I guess I could solve with:</p>
+<p>      Backbone.Marionette.Renderer.render = function(template, data){<br>
+        return ich.template(data);<br>
+      }</p>
+<p>but I&rsquo;m quite sure I can&rsquo;t use your tpl plugin because it is based on underscore templating.<br>
+Is there a way to customize it or adapt it to other templating systems?</p>
+<p>Thank you very much for your contribution!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Ftodomvc-with-backbone-marionette-requirejs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-819" class="comment byuser comment-author-admin bypostauthor odd alt depth-2">
+			<article id="div-comment-819" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/74be2e435d69a5827de7b5d33e7b343d?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/74be2e435d69a5827de7b5d33e7b343d?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="" rel="external nofollow" class="url">Jarrod</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/todomvc-with-backbone-marionette-requirejs/#comment-819">
+							<time datetime="2013-01-19T21:28:29+00:00">
+								January 19, 2013 at 9:28 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>You&rsquo;d be able to pass in any template function, which mustache and (i presume) ICanHaz provides, just pass those in as the template.</p>
+<p>This implementation is pretty basic and differs a little bit from how Derick organizes his code. In my own apps I would probably write something in between this and Derick&rsquo;s implementation, I just tried to keep this one as simple as possible.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Ftodomvc-with-backbone-marionette-requirejs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+		<li id="comment-1272" class="comment even thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-1272" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/4e4c48b4adba29570d445ba1d181951c?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/4e4c48b4adba29570d445ba1d181951c?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="https://github.com/hnakamur/todomvc/commit/ccc1af277991427e9ce2e9f911c79d8b2fcdc4a7" rel="external nofollow" class="url">Hiroaki Nakamura</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/todomvc-with-backbone-marionette-requirejs/#comment-1272">
+							<time datetime="2014-03-13T06:42:48+00:00">
+								March 13, 2014 at 6:42 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Hello Jarrod,<br>
+Thanks for a nice Backbone.Marionette + RequireJS TodoMVC example!</p>
+<p>I tried to update javascript libraries to the latest version.<br>
+jquery 1.11.0 (not 2.x because I need to support old IEs)<br>
+Underscore.js 1.6.0<br>
+Backbone.js 1.1.2<br>
+Marionette.js 1.6.4<br>
+r.js 2.0.6</p>
+<p>However I got the following error on Chrome 33.0.1750.149:<br>
+Uncaught ReferenceError: Backbone is not defined at main.built.js:189</p>
+<p>The updated source is at<br><a href="https://github.com/hnakamur/todomvc/commit/ccc1af277991427e9ce2e9f911c79d8b2fcdc4a7" rel="nofollow">https://github.com/hnakamur/todomvc/commit/ccc1af277991427e9ce2e9f911c79d8b2fcdc4a7</a></p>
+<p>I ran the following commands to update js/main.built.js<br>
+chmod +x ./r.js<br>
+./r.js -o app.build.js</p>
+<p>Could you help me to fix the problem?<br>
+Thanks</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Ftodomvc-with-backbone-marionette-requirejs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --><ol class="children"><li id="comment-1273" class="comment odd alt depth-2">
+			<article id="div-comment-1273" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/4e4c48b4adba29570d445ba1d181951c?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/4e4c48b4adba29570d445ba1d181951c?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn"><a href="https://github.com/hnakamur/todomvc/commit/ccc1af277991427e9ce2e9f911c79d8b2fcdc4a7" rel="external nofollow" class="url">Hiroaki Nakamura</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/todomvc-with-backbone-marionette-requirejs/#comment-1273">
+							<time datetime="2014-03-13T06:49:14+00:00">
+								March 13, 2014 at 6:49 am							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>a typo<br>
+wrong: ./r.js -o app.build.js<br>
+right: node ./r.js -o app.build.js</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Ftodomvc-with-backbone-marionette-requirejs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+</ol><!-- .children --></li><!-- #comment-## -->
+		<li id="comment-1275" class="comment even thread-even depth-1">
+			<article id="div-comment-1275" class="comment-body"><footer class="comment-meta"><div class="comment-author vcard">
+						<img alt="" src="http://1.gravatar.com/avatar/4e4c48b4adba29570d445ba1d181951c?s=56&amp;r=r" srcset="http://1.gravatar.com/avatar/4e4c48b4adba29570d445ba1d181951c?s=112&amp;r=r 2x" class="avatar avatar-56 photo" height="56" width="56"><b class="fn">Hiroaki Nakamura</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/blog/todomvc-with-backbone-marionette-requirejs/#comment-1275">
+							<time datetime="2014-03-13T18:02:51+00:00">
+								March 13, 2014 at 6:02 pm							</time></a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta --><div class="comment-content">
+					<p>Hi, I posted a mail to the require.js mailing list.<br><a href="https://groups.google.com/d/msg/requirejs/m3spU-Ati10/Y8IzVwtML3oJ" rel="nofollow">https://groups.google.com/d/msg/requirejs/m3spU-Ati10/Y8IzVwtML3oJ</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Ftodomvc-with-backbone-marionette-requirejs%2F">Log in to Reply</a></div>			</article><!-- .comment-body --></li><!-- #comment-## -->
+		</ol><!-- .comment-list --><div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/todomvc-with-backbone-marionette-requirejs/#respond" style="display:none;">Cancel reply</a></small></h3><p class="must-log-in">You must be <a href="/blog/wp-login.php?redirect_to=http%3A%2F%2Fjarrodoverson.com%2Fblog%2Ftodomvc-with-backbone-marionette-requirejs%2F">logged in</a> to post a comment.</p>		</div><!-- #respond -->
+		
+</div><!-- .comments-area -->
+
+	<nav class="navigation post-navigation" role="navigation"><h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="/blog/ergotron-workfit-s-vs-workfit-a/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">Ergotron Workfit-S vs Workfit-A</span></a></div><div class="nav-next"><a href="/blog/running-jasmine-through-phantomjs-grunt-jasmine-runner/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">Running jasmine through phantomjs : grunt-jasmine-runner</span></a></div></div>
+	</nav></main><!-- .site-main --></div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo"><div class="site-info">
+						<a href="https://wordpress.org/">Proudly exported from and no longer reliant on WordPress</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer --></div><!-- .site -->
+
+<script type="text/javascript" src="/blog/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010"></script><script type="text/javascript" src="/blog/wp-includes/js/comment-reply.min.js?ver=4.4.2"></script><script type="text/javascript">
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script><script type="text/javascript" src="/blog/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330"></script><script type="text/javascript" src="/blog/wp-includes/js/wp-embed.min.js?ver=4.4.2"></script></body></html>

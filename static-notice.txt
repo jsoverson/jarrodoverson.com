@@ -1,0 +1,24 @@
+<style>
+	#static-notice {
+		font-family:sans-serif;
+		text-align:center;
+		background-color:#F44336;
+		color:#FFFFFF;
+	}
+	#static-notice p {
+		padding:10px 0;
+	}
+	#static-notice a {
+		color:#FFFFFF;
+		text-decoration:underline;
+	}
+</style>
+<div id="static-notice">
+	<h2>Notice!</h2>
+<p>
+This is a static archive. Some links may not work.
+<br>
+	Please visit <a href="http://jarrodoverson.com">jarrodoverson.com</a>
+for updated content.
+</p>
+</div>
