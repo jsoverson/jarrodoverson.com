@@ -1,0 +1,19 @@
+{
+  "name": "jarrodoverson.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": "true",
+  "dependencies": {},
+  "devDependencies": {
+    "async": "^1.5.2",
+    "handlebars": "^4.0.5",
+    "js-yaml": "^3.5.3",
+  },
+  "scripts": {
+    "watch": "./watch.sh",
+    "build": "./build.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

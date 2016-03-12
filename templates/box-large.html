@@ -1,0 +1,17 @@
+<div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div style="background-image: url('static/images/{{name}}.png');" class="mdl-card__media mdl-color-text--grey-50">
+  </div>
+  {{#if text}}
+  <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+    {{text}}
+  </div>
+  {{/if}}
+  {{#if link}}
+  <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+    <div>
+      <span><a href="{{link}}">{{caption}}</a></span>
+    </div>
+  </div>
+  {{/if}}
+</div>
+
